@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Prova Estagiario - Leandro Luna</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <img src="images/logo fiap.png" alt="Logo FIAP" />
+      <ul>
+        <li><a href="#curso">o curso</a></li>
+        <li><a href="#matriz-curricular">matriz curricular</a></li>
+        <li><a href="#turmas">turmas</a></li>
+      </ul>
+      <button>inscreva-se</button>
+    </nav>
+    <section class="header">
+      <div class="header maincontent">
+        <h1>Sistemas para internet</h1>
+        <h2>Full stack, e-commerce & digital transformation</h2>
+        <button>inscreva-se</button>
+        <span><a href="#curso">scroll down</a></span>
+        <i id="setinha"></i>
+      </div>
+    </section>
+    <!-- Fechamento do .header -->
+    <section class="curso" id="curso">
+      <div class="info-esquerda">
+        <h2>O curso</h2>
+        <p>
+          Estamos na era da indústria 4.0. Tudo é digital, nossas experiências,
+          compras e como consumimos informação. O profissional de sistemas web
+          nunca foi tão requisitado quanto agora, pare para pensar quantos apps
+          você acessou hoje, quantas compras online fez no último mês e quantos
+          sites e redes sociais você entrou hoje mesmo. Vivemos a era do
+          comércio eletrônico e da transformação digital. Gigantes como Amazon e
+          outros marketplaces crescem a cada dia mais. Neste cenário, o mercado
+          se expande e as vagas para desenvolvimento web, desenvolvimento de
+          e-commerce, marketplaces acompanham esse crescimento. É um novo mundo
+          onde o mindset é ser digital.
+        </p>
+      </div>
+      <div id="divisor"></div>
+      <div class="info-direita">
+        <h3>Você vai se preparar para:</h3>
+        <ul>
+          <li>
+            Desenvolvimento Front-end: HTML, CSS, Javascript, HTML 5, Angular,
+            Gulp, Bootstrap, Ruby, React Sass, dentre linguagens, frameworks e
+            bibliotecas.
+          </li>
+          <br />
+          <li>
+            E-Commerce & E-Bussiness: desenvolvimento de marketplaces, domínio
+            na área de comércios eletrônicos, modelos de negócios para
+            e-commerces, jornada do consumidor, divulgação de comércio
+            eletrônico, como empreender na internet e boas práticas de
+            desenvolvimento para e-commerce.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Fechamento do .curso -->
+    <section class="matriz-curricular" id="matriz-curricular">
+      <div class="matriz-titulos">
+        <h2>Matriz Curricular</h2>
+        <span id="linha-horizontal"></span>
+        <h3>2.000 horas/aula</h3>
+      </div>
+      <div class="classes" style="margin-top: 100px">
+        <h3>1° ano - 2022</h3>
+        <button class="circulo js">
+          <span class="mais">+</span>
+          <span class="menos">-</span>
+        </button>
+      </div>
+      <div class="conteudo" style="display: none">
+        <h4>Cloud Computing & Network Architeture</h4>
+        <span id="reta"></span>
+        <p>
+          Nesta disciplina você aprenderá conceitos de cloud computing. O tempo
+          todo ouvimos falar em “nuvem”, nossos dados estão na “nuvem”,
+          servidores estão na nuvem. Cloud computing tornou-se uma aplicação
+          indispensável quando pensamos no mundo atual. Você vai adquirir
+          conhecimentos básicos de cloud computing, introdução ao Microsoft
+          Azure, storage, networking e Security. Planejar, instalar, configurar
+          e gerenciar recursos dentro do Azure, como: servidores (Windows e
+          Linux), web apps, redes e banco de dados.
+        </p>
+      </div>
+      <div class="classes" style="margin-top: 17px">
+        <h3>2° ano - 2023</h3>
+        <button class="circulo js">
+          <span class="mais">+</span>
+          <span class="menos">-</span>
+        </button>
+      </div>
+      <div class="conteudo" style="display: none">
+        <h4>Cyber security devops</h4>
+        <span id="reta"></span>
+        <p>
+          Os dados de uma empresa valem muito, ainda mais na era do comércio
+          eletrônico, e-commerces, transações bancárias online outros. De acordo
+          com a Forbes, nos próximos anos, 92% das cargas de trabalho serão
+          processadas por centros de dados na nuvem. A maioria dos CEOs e CIOs,
+          no entanto, cita a segurança como um fator primário que impede a
+          adoção total de um modelo de computação baseada na nuvem. Nessa
+          disciplina você aprenderá a projetar, gerenciar e controlar todo o
+          patrimônio da empresa que está ou poderá estar localizado na nuvem.
+        </p>
+      </div>
+    </section>
+    <!-- Fechamento da .matriz.curricular -->
+    <section class="turmas" id="turmas">
+      <h2>Turmas 2022</h2>
+      <span id="linha-horizontal"></span>
+      <div class="tabela">
+        <table>
+          <tr>
+            <th>campus</th>
+            <th>duração</th>
+            <th>dias</th>
+            <th>horário</th>
+            <th>mensalidade</th>
+          </tr>
+          <tr>
+            <td>Aclimação</td>
+            <td>2 anos (2.000 horas)</td>
+            <td>
+              3 dias por semana com aulas presenciais + 2 dias por semana aulas
+              remotas ao vivo + Nano Courses
+            </td>
+            <td>
+              Matutino<br />
+              Das 07h40 às 12h
+            </td>
+            <td>R$ 990,00*</td>
+          </tr>
+          <tr>
+            <td>Vila Olímpia</td>
+            <td>2 anos (2.000 horas)</td>
+            <td>
+              3 dias por semana com aulas presenciais + 2 dias por semana aulas
+              remotas ao vivo + Nano Courses
+            </td>
+            <td>Noturno <br />Das 19h às 23h15</td>
+            <td>R$ 1.295,00*</td>
+          </tr>
+        </table>
+        <p>* valor para 2022 no plano estendido.</p>
+      </div>
+      <button>inscreva-se</button>
+    </section>
+    <!-- Fechamento da .turmas -->
+  </body>
+
+  <script type="text/javascript" src="app.js"></script>
+</html>

@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url(fonts/GothamHTF-Bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url(fonts/GothamHTF-Book.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gotham HTF';
+    src: url(fonts/GothamHTF-Medium.otf);
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #91A3AD;
+    font-family: 'Gotham HTF', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    background-color: #151819;
+    text-transform: uppercase;
+    justify-content: space-around;
+    top: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu ul li a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #91A3AD;
+    font-size: 20px;
+}
+
+button {
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: #ed145b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
+    background: url(./images/background.png) no-repeat center center;
+    background-size: cover;
+}
+
+.header.maincontent {
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.maincontent h1 {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.header.maincontent h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.header.maincontent button {
+    width: 180px;
+    margin-top: 90px;
+    background-color: transparent;
+    border: 2px solid #ed145b;
+    color: #ed145b;
+}
+
+.header.maincontent button:hover {
+    background-color: #ed145b;
+    color: #fff;
+    border: none;
+}
+
+.header.maincontent span {
+    position: relative;
+    margin-top: 10%;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9.85px;
+}
+
+.header.maincontent span a {
+    text-decoration: none;
+    color: #91A3AD;
+}
+
+#setinha {
+    border: solid #ed145b;
+    border-width: 0 1px 1px 0;
+    padding: 15px;
+    transform: rotate(45deg);
+}
+
+.curso {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.curso .info-esquerda {
+    flex: 0 0 50%;
+    padding-left: 80px;
+}
+
+.curso .info-esquerda p {
+    font-family: 'Roboto', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 68%;
+}
+
+.curso .info-esquerda h2 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.curso .info-direita {
+    padding-left: 90px;
+}
+
+.curso .info-direita h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    size: 16px;
+    line-height: 30px;
+    color: #ed145b;
+    margin-bottom: 40px;
+    padding-top: 52px;
+}
+
+.curso .info-direita ul {
+    font-family: 'Roboto', monospace;
+    font-weight: 400;
+    size: 16px;
+    line-height: 30px;
+    color: #616d72;
+    width: 68%;
+    list-style: none;
+}
+
+.curso .info-direita ul li::before {
+    margin-left: -30px;
+    position: relative;
+    display: inline-block;
+    content: '';
+    left: -20px;
+    top: -5px;
+    width: 25px;
+    border: 1px solid #616d72;
+}
+
+
+#divisor {
+    width: 1px;
+    background-color: #616d72;
+    margin-left: -82px;
+    margin-top: 100px;
+}
+
+.matriz-curricular {
+    position: relative;
+    margin: 250px auto;
+    width: 960px;
+}
+
+
+.matriz-curricular .matriz-titulos {
+    text-transform: uppercase;
+}
+
+.matriz-curricular .matriz-titulos h2 {
+    color: #91A3AD;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.matriz-curricular .matriz-titulos h3 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 500;
+    color: #616d72;
+    display: inline-block;
+}
+
+#linha-horizontal {
+    width: 73px;
+    border: 1px solid #616d72;
+    margin: 7px;
+    display: inline-block;
+}
+
+.matriz-curricular .classes {
+    border: 1px solid #91A3AD;
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 47px;
+    cursor: pointer;
+}
+
+.matriz-curricular .classes h3 {
+    font-family: 'Roboto', monospace;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+    color: #91A3AD;
+    text-transform: uppercase;
+}
+
+.matriz-curricular .classes .circulo.js {
+    border: 1px solid #ed145b;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.matriz-curricular .classes .circulo.js span {
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 0 0 13px;
+    font-size: 40px;
+    color: #ed145b;
+    transition: 0.3s all ease-out;
+}
+
+.matriz-curricular .classes .circulo.js .mais {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.matriz-curricular .classes.ativo .circulo.js .mais {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+
+.matriz-curricular .classes .circulo.js .menos {
+    opacity: 0;
+    top: -5px;
+    left: 5px;
+    transform: rotate(-90deg);
+}
+
+.matriz-curricular .classes.ativo .circulo.js .menos {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+.matriz-curricular .conteudo {
+    font-family: 'Roboto', monospace;
+    padding: 20px;
+    border: 1px solid #91A3AD;
+    border-top: none;
+    padding: 0 128px 111px 63px;
+}
+
+.matriz-curricular .conteudo h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ed145b;
+    margin-bottom: 10px;
+}
+
+.matriz-curricular .conteudo p {
+    color: #616d72;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#reta {
+    position: absolute;
+    display: flex;
+    width: 1px;
+    height: 137px;
+    background-color: #616d72;
+    margin-left: -20px;
+}
+
+.turmas {
+    position: relative;
+    margin: 250px auto 200px;
+    text-align: center;
+}
+
+.turmas h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.turmas #linha-horizontal {
+    margin-top: 50px;
+    border: 4px solid #ed145b;
+    margin-bottom: 70px;
+}
+
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 960px;
+    height: 116px;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+
+    border: 1px solid #32383b;
+    text-align: center;
+    padding: 17px;
+    width: calc(960px/5);
+}
+
+th {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+td {
+    font-family: 'Roboto', monospace;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+table tr td:nth-child(1) {
+    color: #ed145b;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+table tr td:nth-child(4) {
+    text-align: left;
+    padding-left: 65px;
+}
+
+.turmas .tabela p {
+    font-family: 'Roboto', monospace;
+    display: inline-block;
+    text-align: right;
+    width: 1136px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #616d72;
+    text-transform: uppercase;
+}
+
+.turmas button {
+    margin-top: 70px;
+    background-color: transparent;
+    color: #ed145b;
+    border: 1px solid #ed145b;
+}
+
+
+.turmas button:hover {
+    background-color: #ed145b;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 1210px) {
+    .header .header.maincontent h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .header {
+        margin-top: 50px;
+    }
+
+    .turmas {
+        margin-bottom: 80px;
+    }
+
+    .turmas button {
+        margin-top: 30px;
+    }
+}
